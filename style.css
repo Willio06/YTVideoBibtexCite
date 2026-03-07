@@ -95,6 +95,22 @@ label {
   font-size: 14px;
 }
 
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+  gap: 6px 12px;
+}
+
+.checkbox-group label {
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 4px;
+}
+
 .btn-generate {
   width: 100%;
   padding: 14px 24px;

@@ -25,6 +25,22 @@
         <input type="text" id="key" class="input-small" placeholder="e.g., MyVideo2024" />
       </div>
       
+      <div class="form-group">
+        <label>Fields to include</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="fields" value="title" checked> Title</label>
+          <label><input type="checkbox" name="fields" value="author" checked> Author</label>
+          <label><input type="checkbox" name="fields" value="year" checked> Year</label>
+          <label><input type="checkbox" name="fields" value="url" checked> URL</label>
+          <label><input type="checkbox" name="fields" value="urldate" checked> Accessed</label>
+          <label><input type="checkbox" name="fields" value="abstract"> Description</label>
+          <label><input type="checkbox" name="fields" value="month"> Month</label>
+          <label><input type="checkbox" name="fields" value="date"> Date</label>
+          <label><input type="checkbox" name="fields" value="length"> Length</label>
+          <label><input type="checkbox" name="fields" value="series"> Playlist</label>
+        </div>
+      </div>
+      
       <button class="btn-generate" onclick="generate()">Generate Citation</button>
       
       <div class="output-section" id="outputSection" style="display: none;">

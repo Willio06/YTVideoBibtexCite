@@ -8,12 +8,20 @@ async function generate() {
   }
 
   try {
-    const res = await fetch(
-      "https://ytvideobibtex-worker.tuur-willio.workers.dev/?id=" +
-        encodeURIComponent(video) +
-        "&key=" +
-        encodeURIComponent(key)
-    );
+    const selectedFields = Array.from(
+    document.querySelectorAll('input[name="fields"]:checked')
+  ).map(cb => cb.value);
+
+  let url =
+    "https://ytvideobibtex-worker.tuur-willio.workers.dev/?id=" +
+    encodeURIComponent(video) +
+    "&key=" +
+    encodeURIComponent(key);
+  if (selectedFields.length) {
+    url += "&fields=" + encodeURIComponent(selectedFields.join(","));
+  }
+
+  const res = await fetch(url);
 
     const text = await res.text();
 
