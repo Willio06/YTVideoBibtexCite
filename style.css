@@ -200,12 +200,9 @@ label {
 }
 
 .disclaimer {
-  margin-top: 20px;
   text-align: center;
   color: #000;
   font-size: 12px;
-  font-weight: normal;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 40px;
+  padding: 0 20px;
 }
