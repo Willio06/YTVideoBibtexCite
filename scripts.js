@@ -25,14 +25,13 @@ async function generate() {
   }
 }
 
-function copyToClipboard() {
+function copyToClipboard(button) {
   const resultText = document.getElementById("result").textContent;
   navigator.clipboard.writeText(resultText).then(() => {
-    const btn = event.target;
-    const originalText = btn.textContent;
-    btn.textContent = "Copied!";
+    const originalText = button.textContent;
+    button.textContent = "Copied!";
     setTimeout(() => {
-      btn.textContent = originalText;
+      button.textContent = originalText;
     }, 2000);
   }).catch(() => {
     alert("Failed to copy to clipboard");
