@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YT video BibTeX Cite</title>
+  <meta charset="UTF-8">
+  <!-- <meta name="description" content="A glorified alarm clock for finite time intervals.">
+  <meta name="keywords" content="Tuur Willio, Finite Time, glorified clock, alarm clock, timer, time management"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link author="Tuur Willio" href="mailto:tuur.willio@gmail.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>YouTube BibTeX Citation</h1>
+      <p class="subtitle">Generate citations for your videos</p>
+      
+      <div class="form-group">
+        <label for="video">Video URL</label>
+        <input type="text" id="video" class="input-large" placeholder="https://youtube.com/watch?v=..." />
+      </div>
+      
+      <div class="form-group">
+        <label for="key">Citation Key (optional)</label>
+        <input type="text" id="key" class="input-small" placeholder="e.g., MyVideo2024" />
+      </div>
+      
+      <button class="btn-generate" onclick="generate()">Generate Citation</button>
+      
+      <div class="output-section" id="outputSection" style="display: none;">
+        <div class="output-header">
+          <h3>Citation</h3>
+          <button class="btn-copy" onclick="copyToClipboard()">Copy to Clipboard</button>
+        </div>
+        <pre id="result" class="result-box"></pre>
+      </div>
+    </div>
+  </div>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
