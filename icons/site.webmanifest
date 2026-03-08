@@ -1,6 +1,6 @@
 {
-  "name": "YT BibTeX Cite",
-  "short_name": "YT BibTeX",
+  "name": "YT BibTeX",
+  "short_name": "YT TeX",
   "icons": [
     {
       "src": "/icons/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffb200",
-  "background_color": "#ffb200",
+  "theme_color": "#ff8c00",
+  "background_color": "#ff8c00",
   "display": "standalone"
 }
